@@ -1,0 +1,55 @@
+$main-color: rgb(200, 200, 255);
+$font-color-main: rgb(10, 10, 10);
+
+$padding-default: 2% 3%;
+
+*{
+    box-sizing: border-box;
+    line-height: 150%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template-areas: "a a a a  b"
+                         "a a a a  b"
+                         "a a a a  b"
+                         "c c c c  d"
+                         "c c c c  d";
+    gap: 10px;
+    width: calc(100vh * (16/9));
+    margin: 2% auto 0 auto;
+}
+
+main, aside, div{
+    background-color: $main-color;
+    color: $font-color-main;
+    padding: $padding-default;
+    
+}
+
+h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+aside{
+    width: 20vw;
+}
+
+main{
+     grid-area: a;
+     height: 60vh;
+}
+
+.keys{
+    grid-area: b;
+}
+
+.form{
+    grid-area: c;
+}
+
+.saved{
+    grid-area: d;
+}

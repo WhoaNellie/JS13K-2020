@@ -1,0 +1,62 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 150%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "a a a a  b" "a a a a  b" "a a a a  b" "c c c c  d" "c c c c  d";
+  gap: 10px;
+  width: calc(100vh * (16/9));
+  margin: 2% auto 0 auto;
+}
+
+main, aside, div {
+  background-color: #c8c8ff;
+  color: #0a0a0a;
+  padding: 2% 3%;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+aside {
+  width: 20vw;
+}
+
+main {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: a;
+  height: 60vh;
+}
+
+.keys {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 5;
+  grid-area: b;
+}
+
+.form {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: c;
+}
+
+.saved {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 5;
+  grid-area: d;
+}
+/*# sourceMappingURL=style.css.map */
